@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		2428B05629B4174E00551577 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		2428B06029B65F1600551577 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		2428B06029B65F1600551577 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		24358F5429B40DB100A4ABA7 /* Recipe List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24358F5729B40DB100A4ABA7 /* Recipe_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_ListApp.swift; sourceTree = "<group>"; };
 		24358F5929B40DB100A4ABA7 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };

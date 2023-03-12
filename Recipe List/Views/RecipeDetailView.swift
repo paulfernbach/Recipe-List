@@ -19,7 +19,7 @@ struct RecipeDetailView: View {
         
         // MARK: Recipe Image
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
                 Image(recipe.image)
                     .resizable().scaledToFit()
                 
@@ -29,7 +29,7 @@ struct RecipeDetailView: View {
                     ForEach(recipe.ingredients) { item in
                         Text(dot + " " + item.name)
                     }
-                }.padding(.bottom, 20)
+                }.padding(.horizontal)
                 
                 // MARK: Divider
                 Divider()
