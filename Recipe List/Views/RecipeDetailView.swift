@@ -15,6 +15,7 @@ struct RecipeDetailView: View {
         
         // MARK: Title
         
+        let dot = "•"
         
         // MARK: Recipe Image
         ScrollView {
@@ -25,8 +26,8 @@ struct RecipeDetailView: View {
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
                     Text("Ingredients").font(.headline).padding([.top, .bottom], 5)
-                    ForEach(recipe.ingredients, id:\.self) { item in
-                        Text("• " + item)
+                    ForEach(recipe.ingredients) { item in
+                        Text(dot + " " + item.name)
                     }
                 }.padding(.bottom, 20)
                 
