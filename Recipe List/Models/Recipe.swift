@@ -28,5 +28,5 @@ class Ingredient: Identifiable, Decodable {
     var name:String
     var num:Int?
     var denom:Int?
-    var Unit:String?
+    var unit:String?
 }

@@ -10,9 +10,10 @@ import SwiftUI
 struct RecipeDetailView: View {
     
     var recipe:Recipe
-    
+    @State var selectedServingSize = 2
+
     var body: some View {
-        
+                
         // MARK: Title
         
         let dot = "•"
@@ -23,11 +24,23 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable().scaledToFit()
                 
+                // MARK: Serving size picker
+                VStack(alignment: .leading) {
+                    Text("Select your serving size")
+                    Picker("", selection: $selectedServingSize) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }.pickerStyle(SegmentedPickerStyle()).frame(width:200)
+                }.padding()
+                
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
                     Text("Ingredients").font(.headline).padding([.top, .bottom], 5)
                     ForEach(recipe.ingredients) { item in
-                        Text(dot + " " + item.name)
+                        Text(dot + " " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + item.name.lowercased())
+                        //Text(dot + " " + item.name)
                     }
                 }.padding(.horizontal)
                 
