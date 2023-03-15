@@ -75,7 +75,6 @@
 				24358F6729B40E0700A4ABA7 /* Data */,
 				24358F6629B40E0000A4ABA7 /* Models */,
 				24358F5729B40DB100A4ABA7 /* Recipe_ListApp.swift */,
-				24358F5929B40DB100A4ABA7 /* RecipeListView.swift */,
 				24358F5B29B40DB300A4ABA7 /* Assets.xcassets */,
 				244D251429C0EFBC004C00BD /* Utilities */,
 				24358F5D29B40DB300A4ABA7 /* Preview Content */,
@@ -94,6 +93,7 @@
 		24358F6529B40DF800A4ABA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				24358F5929B40DB100A4ABA7 /* RecipeListView.swift */,
 				244D245429BAA69E004C00BD /* RecipeTabView.swift */,
 				244D248C29BF94C5004C00BD /* RecipeFeaturedView.swift */,
 				2428B06029B65F1600551577 /* RecipeDetailView.swift */,

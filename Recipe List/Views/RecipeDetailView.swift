@@ -29,7 +29,7 @@ struct RecipeDetailView: View {
                     .bold()
                     .padding(.top, 20)
                     .padding(.leading)
-                    .font(.largeTitle)
+                    .font(Font.custom("Avenir Heavy", size: 24))
                 
                 // MARK: Serving size picker
                 VStack(alignment: .leading) {
@@ -40,14 +40,17 @@ struct RecipeDetailView: View {
                         Text("6").tag(6)
                         Text("8").tag(8)
                     }.pickerStyle(SegmentedPickerStyle()).frame(width:200)
+                        .font(Font.custom("Avenir", size: 15))
                 }.padding()
                 
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
-                    Text("Ingredients").font(.headline).padding([.top, .bottom], 5)
+                    Text("Ingredients")
+                        .font(Font.custom("Avenir Heavy", size: 16))
+                        .padding([.top, .bottom], 5)
                     ForEach(recipe.ingredients) { item in
                         Text(dot + " " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + item.name.lowercased())
-                        //Text(dot + " " + item.name)
+                            .font(Font.custom("Avenir", size: 15))
                     }
                 }.padding(.horizontal)
                 
@@ -56,9 +59,12 @@ struct RecipeDetailView: View {
                 
                 // MARK: Directions
                 VStack(alignment: .leading) {
-                    Text("Directions").font(.headline).padding([.bottom, .top], 5)
+                    Text("Directions")
+                        .font(Font.custom("Avenir Heavy", size: 16))
+                        .padding([.bottom, .top], 5)
                     ForEach(0...recipe.directions.count-1, id:\.self) { index in
                         Text(String(index+1) + ". " + recipe.directions[index]).padding(.bottom,2)
+                            .font(Font.custom("Avenir", size: 15))
                     }
                 }
                 .padding(.horizontal)
