@@ -19,6 +19,7 @@
 		244D245529BAA69E004C00BD /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D245429BAA69E004C00BD /* RecipeTabView.swift */; };
 		244D248D29BF94C5004C00BD /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D248C29BF94C5004C00BD /* RecipeFeaturedView.swift */; };
 		244D251629C0EFD5004C00BD /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D251529C0EFD5004C00BD /* Rational.swift */; };
+		2474251129C140C400D22828 /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2474251029C140C400D22828 /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		244D245429BAA69E004C00BD /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		244D248C29BF94C5004C00BD /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		244D251529C0EFD5004C00BD /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		2474251029C140C400D22828 /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				244D245429BAA69E004C00BD /* RecipeTabView.swift */,
 				244D248C29BF94C5004C00BD /* RecipeFeaturedView.swift */,
 				2428B06029B65F1600551577 /* RecipeDetailView.swift */,
+				2474251029C140C400D22828 /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				24358F6D29B4100A00A4ABA7 /* Recipe.swift in Sources */,
 				2428B06129B65F1600551577 /* RecipeDetailView.swift in Sources */,
+				2474251129C140C400D22828 /* RecipeHighlights.swift in Sources */,
 				244D251629C0EFD5004C00BD /* Rational.swift in Sources */,
 				24358F6F29B414F700A4ABA7 /* RecipeModel.swift in Sources */,
 				24358F5A29B40DB100A4ABA7 /* RecipeListView.swift in Sources */,
